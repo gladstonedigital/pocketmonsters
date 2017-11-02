@@ -1,6 +1,8 @@
-from pm_monster import PocketMonster
-from pm_monster import STATUS
+#!/usr/bin/env python3
+
 import itertools
+from pm_monster import PocketMonster
+from pm_monster import Status
 
 def main():
    player1 = {}
@@ -9,10 +11,10 @@ def main():
    player2["monsters"] = []
 
    player1["monsters"].append(PocketMonster(
-      name="Pikachu", 
-      element="electric", 
-      level=5, 
-      health=30, 
+      name="Pikachu",
+      element="electric",
+      level=5,
+      health=30,
       moves=[
          PocketMonster.Move(name="Thundershock", damage=10, uses=10, element="electric"),
          PocketMonster.Move(name="Swipe", damage=7, uses=15, element="neutral")
@@ -20,10 +22,10 @@ def main():
    ))
 
    player2["monsters"].append(PocketMonster(
-      name="Rattata", 
-      element="neutral", 
-      level=5, 
-      health=25, 
+      name="Rattata",
+      element="neutral",
+      level=5,
+      health=25,
       moves=[
          PocketMonster.Move(name="Burrow", damage=0, uses=10, element="neutral"),
          PocketMonster.Move(name="Swipe", damage=7, uses=15, element="neutral")
